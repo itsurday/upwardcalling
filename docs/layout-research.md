@@ -211,6 +211,8 @@ template will cover Privacy and similar pages.
 
 ### Still open
 
+Tracked as a checklist in [client-checklist.md](client-checklist.md).
+
 * **Google rating**: the owner pointed to the [Google Maps listing](https://maps.app.goo.gl/jeWhzemys5oUsDaP9). Checked 2026-11-06, it shows
   **5.0**, category "Resume service", 1244 State St Suite #117, Lemont, IL 60439 (Centennial
   Plaza), "Identifies as women-owned". Google's signed-out "limited view" hides the **number of
