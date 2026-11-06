@@ -11,10 +11,17 @@
         "source": "github",
         "repo": "nextlevelbuilder/ui-ux-pro-max-skill"
       }
+    },
+    "ponytail": {
+      "source": {
+        "source": "github",
+        "repo": "DietrichGebert/ponytail"
+      }
     }
   },
   "enabledPlugins": {
     "ecc@ecc": true,
-    "ui-ux-pro-max@ui-ux-pro-max-skill": true
+    "ui-ux-pro-max@ui-ux-pro-max-skill": true,
+    "ponytail@ponytail": true
   }
 }
