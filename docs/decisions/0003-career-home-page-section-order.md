@@ -1,5 +1,5 @@
 ---
-status: proposed
+status: accepted
 date: 2026-11-06
 decision-makers: Project owner (chrisnkad)
 consulted: Claude Code
@@ -31,7 +31,7 @@ page use, so that a job seeker trusts Christen and books the free call?
 
 ## Decision Outcome
 
-Proposed option: "A. Trust-led single-CTA page", because it matches what the strongest solo-practice
+Chosen option: "A. Trust-led single-CTA page", because it matches what the strongest solo-practice
 references do (Thomas Career Consulting, Strategic Career Coaches), follows both relevant UI/UX
 Pro Max landing patterns, and uses content Christen already has. Full table with reasons:
 `docs/layout-research.md` §6.

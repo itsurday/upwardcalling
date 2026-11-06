@@ -6,7 +6,7 @@ decisions are in [decisions/](decisions/README.md).
 
 ## Blocking the next phase
 
-- [ ] **Approve the home page plan, or say what to change.**
+- [x] **Approve the home page plan, or say what to change.**
   The proposed section order is in [ADR-0003](decisions/0003-career-home-page-section-order.md)
   (full table in layout-research.md §6):
   1. Header with a "Book a free call" button
@@ -23,7 +23,12 @@ decisions are in [decisions/](decisions/README.md).
   12. Final call to action with a contact form
   13. Footer with a Photography link
 
-  Phase 3 (colors, fonts and the design system) starts once you approve this.
+  Phase 3 (colors, fonts and the design system) starts when the owner gives the go-ahead.
+  > Answer: Approved.
+
+- [ ] **Christen: choose one of the five home page designs.**
+  The owner will share the preview link. The headlines differ between designs, so say if you prefer
+  one design with another's headline.
   > Answer:
 
 ## Needed before launch (not blocking design)
@@ -75,3 +80,4 @@ These come up during the build only if needed. Nothing to do yet.
 | Testimonials | Take from the current site |
 | Duplicate UI/UX Pro Max skills | Plugin removed from `.claude/settings.json` |
 | Push to GitHub | Yes |
+| Photography at launch | A simple one-page `/photo` goes live with the career site |

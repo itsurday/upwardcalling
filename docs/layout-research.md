@@ -2,7 +2,7 @@
 
 Phase 2 deliverable. Captured 2026-11-06.
 Related decisions: [ADR-0002](decisions/0002-separate-career-site-from-photography.md) (split the sites) and
-[ADR-0003](decisions/0003-career-home-page-section-order.md) (home page section order, *proposed*).
+[ADR-0003](decisions/0003-career-home-page-section-order.md) (home page section order, accepted).
 
 Items marked **[CLIENT TO SUPPLY]** are facts I could not find on the current site and did not invent.
 
