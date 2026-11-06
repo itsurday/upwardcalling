@@ -51,8 +51,12 @@ gives each audience one clear path to booking and matches the owner's direction.
 * Neutral: both stay on one domain (owner decision, 2026-11-06). The Career Services site lives at
   `https://www.upwardcalling.com/` and Photography at `https://www.upwardcalling.com/photo`.
   They are separate projects that share the domain, so they need a shared hosting/routing setup.
+* Neutral: a simple one-page `/photo` ships with the career site (owner decision), reusing its
+  templates and the current photography content, services, contact details and school-picture
+  ordering link. Moving the domain off Wix would otherwise take those pages offline. The full
+  photography project replaces this page later.
 * Bad, because existing photography URLs (for example `/services-9`, school-picture ordering) will
-  need redirects to `/photo` once the photography project ships.
+  need redirects to `/photo` when the domain moves.
 
 ### Confirmation
 
