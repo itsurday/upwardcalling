@@ -46,10 +46,9 @@ upstream on every OS.
   `chore: add UI/UX Pro Max skills`), so either can be reverted alone.
 * Bad, because vendored copies do not update themselves; refresh with `uipro update` and
   re-curl `frontend-design` when needed.
-* Bad, because `.claude/settings.json` also enables the `ui-ux-pro-max` **plugin**
-  (added earlier in this repo), so the same skills may appear twice (plugin-namespaced and
-  project-level). **Owner to decide:** keep both, or remove the plugin entry from
-  `.claude/settings.json`. Not changed here because the instructions were not to touch existing files.
+* Neutral: `.claude/settings.json` previously also enabled the `ui-ux-pro-max` **plugin**, which
+  loaded the same skills twice. The owner chose to remove the plugin entry (2026-11-06), so the
+  project-level copies in `.claude/skills/` are now the only source.
 
 ### Confirmation
 
