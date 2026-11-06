@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Upward Calling | Career coaching and resume writing</title>
+<meta name="description" content="Resume writing, career coaching and interview preparation with Christen Mazura-Morris. Schedule your free Career Connection Call.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Palette: UI/UX Pro Max "Photography Studio" (pure black + white); her yellow blazer is the only color */
+:root{
+  --primary:#18181B;--secondary:#27272A;--accent:#F8FAFC;--on-accent:#0F172A;--bg:#000000;--ink:#FAFAFA;
+  --muted:#181818;--muted-ink:#B4BCC8;--border:#3F3F46;
+  --display:"Bodoni Moda",Georgia,serif;--body:Jost,system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.1rem/1.65 var(--body)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;line-height:1.06;text-wrap:balance}
+h2{font-size:clamp(2.5rem,5.8vw,5rem)}
+h3{font-size:1.55rem;line-height:1.2}
+p{margin:0 0 1em}
+figure{margin:0}
+:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.wrap{width:min(1240px,100% - 40px);margin-inline:auto}
+.skip{position:absolute;left:-999px;background:#fff;color:#000;padding:12px}
+.skip:focus{left:8px;top:8px;z-index:10}
+.btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;min-height:50px;padding:12px 28px;background:var(--accent);color:var(--on-accent);font:500 1.03rem/1.25 var(--body);text-decoration:none;border:1px solid var(--accent);cursor:pointer;transition:background .2s,color .2s}
+.btn:hover{background:transparent;color:var(--accent)}
+.quiet{display:inline-flex;align-items:center;min-height:50px;text-underline-offset:5px}
+
+/* Hero: the portrait fills the screen; the dark studio backdrop carries the type */
+.hero{position:relative;min-height:min(100vh,960px);display:flex;flex-direction:column;overflow:hidden;background:#2F2B28}
+.shot{position:absolute;inset:0 0 0 auto;width:68%;height:100%;object-fit:cover;object-position:50% 18%;animation:drift 1.8s cubic-bezier(.2,.7,.2,1) both}
+@keyframes drift{from{transform:scale(1.06)}to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#000 0,rgba(0,0,0,.92) 30%,rgba(0,0,0,.25) 56%,rgba(0,0,0,0) 72%),linear-gradient(0deg,rgba(0,0,0,.5),transparent 28%)}
+.head{position:relative;z-index:1}
+.head .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:6px 26px;padding-block:14px}
+.plate{background:#fff;padding:6px 10px;display:block}
+.plate img{width:108px}
+.head nav{display:flex;flex-wrap:wrap;gap:0 24px;margin-left:auto}
+.head nav a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
+.head nav a:hover{text-decoration:underline;text-underline-offset:5px}
+.copy{position:relative;z-index:1;margin-block:auto;padding-block:clamp(30px,6vw,70px)}
+.copy>.wrap>div{max-width:min(600px,52%)}
+.hero h1{font-size:clamp(3.2rem,7.8vw,7.4rem);line-height:.98}
+.hero h1 span{display:block;font-style:italic}
+.hero .sub{font-size:1.2rem;margin:24px 0 26px;max-width:29em}
+.hero .actions{display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center}
+.creds{position:relative;z-index:1;padding-bottom:18px;font-size:1rem}
+
+.proof{border-block:1px solid var(--border)}
+.proof ul{list-style:none;margin:0;padding:28px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.proof b{display:block;font:400 1.55rem/1.2 var(--display)}
+.proof span{display:block;font-size:.98rem;line-height:1.4;margin-top:6px;color:var(--muted-ink)}
+
+section{padding-block:clamp(70px,9vw,130px)}
+.problem .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.problem .lines p{font:400 clamp(1.25rem,2.1vw,1.65rem)/1.35 var(--display);padding-bottom:20px;margin-bottom:20px;border-bottom:1px solid var(--border)}
+.problem .help{font-style:italic;border:0!important;margin:0!important;padding:0!important}
+
+.outcomes{background:var(--muted)}
+.tri{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:44px}
+.tri p{margin:10px 0 0;color:var(--muted-ink)}
+
+.intro-line{margin:18px 0 0;font-size:1.2rem;color:var(--muted-ink)}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);margin-top:48px;border-top:1px solid var(--border)}
+.col{padding:30px 34px 0;border-left:1px solid var(--border)}
+.col:first-child{border-left:0;padding-left:0}
+.col:last-child{padding-right:0}
+.col .range{font:italic 400 1.35rem/1.3 var(--display);margin:8px 0 16px}
+.col ul{list-style:none;margin:0;padding:0;font-size:1rem;line-height:1.45;color:var(--muted-ink)}
+.col li{padding:11px 0;border-top:1px solid var(--border)}
+.col li b{display:block;font-weight:500;color:var(--ink)}
+.fine{font-size:.94rem;color:var(--muted-ink);margin:40px 0 0;max-width:60em}
+
+.process{background:var(--muted)}
+.rows{list-style:none;margin:44px 0 0;padding:0;counter-reset:s}
+.rows li{counter-increment:s;display:grid;grid-template-columns:90px 110px minmax(0,300px) minmax(0,1fr);gap:8px 24px;align-items:baseline;padding:20px 0;border-top:1px solid var(--border)}
+.rows li::before{content:counter(s);font:italic 400 2.3rem/1 var(--display)}
+.rows small{font-size:.98rem;color:var(--muted-ink)}
+.rows p{margin:0;color:var(--muted-ink)}
+
+.voices{display:grid;gap:clamp(44px,6vw,80px);margin-top:50px}
+.voices figure{max-width:42em}
+.voices figure:nth-child(even){justify-self:end}
+.voices blockquote{margin:0 0 12px;font:400 clamp(1.6rem,3.2vw,2.7rem)/1.18 var(--display)}
+.voices figcaption{color:var(--muted-ink)}
+.voices figcaption b{color:var(--ink);font-weight:500}
+
+/* Faith note sits over her mountain photo */
+.summit{position:relative;background:#000 url(../assets/mountains.jpg) 50% 70%/cover no-repeat;padding-block:clamp(90px,13vw,190px)}
+.summit::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.72)}
+.summit blockquote{position:relative;margin:0 auto;max-width:21em;text-align:center;font:italic 400 clamp(1.8rem,4vw,3.4rem)/1.2 var(--display)}
+.summit cite{display:block;font:400 1rem/1.6 var(--body);margin-top:16px}
+
+.about .wrap{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:64px;align-items:center}
+.about img{aspect-ratio:1/1.1;object-fit:cover;object-position:50% 15%}
+.about h2{margin-bottom:20px}
+.about p{color:#E4E4E7}
+
+.row{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
+.row img{aspect-ratio:7/9;object-fit:cover;object-position:top}
+.row figcaption{margin-top:12px}
+
+.faq{background:var(--muted)}
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:start}
+.faq h2{font-size:clamp(2.5rem,5vw,4rem)}
+details{border-top:1px solid var(--border)}
+details:last-child{border-bottom:1px solid var(--border)}
+summary{cursor:pointer;padding:13px 0;min-height:48px;font:400 1.35rem/1.3 var(--display)}
+details p{color:var(--muted-ink)}
+
+.final .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:start}
+.final h2{margin-bottom:20px}
+.final .lead{font-size:1.2rem;color:#E4E4E7}
+label,legend{display:block;font-weight:500;margin-bottom:4px}
+input[type=text],input[type=email],textarea{width:100%;min-height:48px;padding:10px;border:1px solid #71717A;font:inherit;margin-bottom:16px;background:var(--muted);color:var(--ink)}
+fieldset{border:0;padding:0;margin:0 0 16px}
+.check{display:flex;gap:10px;align-items:center;font-weight:400;min-height:32px;margin:0}
+.check input{width:20px;height:20px;accent-color:#FAFAFA}
+form .btn{width:100%}
+
+footer{border-top:1px solid var(--border);padding-block:28px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;align-items:center}
+footer ul{list-style:none;display:flex;flex-wrap:wrap;gap:0 20px;margin:0;padding:0}
+footer li a{display:inline-flex;align-items:center;min-height:32px}
+footer small{width:100%;font-size:.92rem;color:var(--muted-ink)}
+
+@media (max-width:860px){
+  .hero{min-height:0}
+  .shot{position:static;width:100%;height:auto;aspect-ratio:1/1.05;order:2;object-position:50% 12%}
+  .hero::after{display:none}
+  .hero{background:#000}
+  .copy{order:1;padding-block:28px}
+  .copy>.wrap>div{max-width:none}
+  .creds{order:3;padding-top:12px}
+  .proof ul{grid-template-columns:1fr 1fr}
+  .problem .wrap,.tri,.about .wrap,.faq .wrap,.final .wrap{grid-template-columns:1fr}
+  .cols{grid-template-columns:1fr;border-top:0}
+  .col:nth-child(n){padding:26px 0 0;border-left:0}
+  .rows li{grid-template-columns:50px minmax(0,1fr)}
+  .rows li>*{grid-column:2}
+  .rows li::before{grid-row:1/4}
+  .voices figure:nth-child(even){justify-self:start}
+  .row{grid-template-columns:1fr;max-width:400px}
+  .head nav{margin-left:0;width:100%;order:3;gap:0 16px}
+  .head .btn{margin-left:auto}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<div class="hero">
+  <img class="shot" src="../assets/headshot-large.jpg" alt="Christen Mazura-Morris, smiling, in a bright yellow blazer" width="1800" height="2036" fetchpriority="high">
+  <header class="head"><div class="wrap">
+    <a class="plate" href="#main"><img src="../assets/logo.png" alt="Upward Calling: career coaching and resume writing" width="636" height="342"></a>
+    <a class="btn" href="#contact" style="order:2">Book a free call</a>
+    <nav aria-label="Main"><a href="#services">Services</a><a href="#how">How it works</a><a href="#about">About</a><a href="#results">Results</a><a href="#contact">Contact</a></nav>
+  </div></header>
+  <main id="main" class="copy"><div class="wrap"><div>
+    <h1>Hi, I'm Christen. <span>I can help.</span></h1>
+    <p class="sub">I write resumes, cover letters and LinkedIn profiles, and coach job seekers through the search and the interview. You work directly with me.</p>
+    <div class="actions">
+      <a class="btn" href="#contact">Schedule your free Career Connection Call</a>
+      <a class="quiet" href="#services">See services and pricing</a>
+    </div>
+  </div></div></main>
+  <div class="creds"><div class="wrap">Christen Mazura-Morris, CPRW, CPCC, CEIP</div></div>
+</div>
+
+<div class="proof"><div class="wrap"><ul>
+  <li><b>20+ years</b><span>writing resumes and educating people on the job search</span></li>
+  <li><b>PARWCC certified</b><span>resume writer, career coach and interview professional</span></li>
+  <li><b>5 business days</b><span>to your customized resume draft</span></li>
+  <li><b>Virtual, via Zoom</b><span>your resume reveal is an interactive call</span></li>
+</ul></div></div>
+
+<section class="problem"><div class="wrap">
+  <h2>Does this sum up your job search?</h2>
+  <div class="lines">
+    <p>You use your resume to apply for jobs and get no response.</p>
+    <p>You find the perfect position that meets your qualifications, you apply, and you never hear back.</p>
+    <p>You go to the interview for the job of your dreams, think it goes well, and don't get the job.</p>
+    <p class="help">If you're discouraged and want to quit, wait. I can help.</p>
+  </div>
+</div></section>
+
+<section class="outcomes"><div class="wrap">
+  <h2>What changes</h2>
+  <div class="tri">
+    <div><h3>Get through the ATS</h3><p>An ATS-friendly resume, not a template, that gets past the applicant tracking system.</p></div>
+    <div><h3>Appeal to recruiters</h3><p>Career documents that visually appeal to recruiters and hiring managers and show your personal brand.</p></div>
+    <div><h3>Show you're the best fit</h3><p>Showcase your value, customize your messaging for fit and likability, and prepare through mock interviews.</p></div>
+  </div>
+</div></section>
+
+<section id="services"><div class="wrap">
+  <h2>Services and pricing</h2>
+  <p class="intro-line">I write every document myself.</p>
+  <div class="cols">
+    <article class="col">
+      <h3>Career documents</h3>
+      <p class="range">$300 to $3,500</p>
+      <ul>
+        <li><b>The Ultimate Professional</b>Resume and cover letter development, full LinkedIn optimization and strategy call. $800 to $3,500</li>
+        <li><b>The Essential Toolbox</b>Resume and cover letter development and partial LinkedIn optimization. $600 to $3,000</li>
+        <li><b>The Quick Fix</b>Review of your current resume, cover letter and LinkedIn profile by email. $300 to $1,400</li>
+      </ul>
+    </article>
+    <article class="col">
+      <h3>Coaching</h3>
+      <p class="range">$750 per package</p>
+      <ul>
+        <li><b>Finding My Direction</b>Career assessment and goals</li>
+        <li><b>Designing a Career Campaign</b>The hidden job market and a networking strategy</li>
+        <li><b>Preparing for the Interview</b>Value proposition, scripting and role playing</li>
+        <li><b>Career Crash Course</b>Direction, strategy and interview preparation</li>
+      </ul>
+    </article>
+    <article class="col">
+      <h3>Individual services</h3>
+      <p class="range">$100 to $1,200</p>
+      <ul>
+        <li><b>Resume or LinkedIn development</b>$450 to $1,200 each</li>
+        <li><b>Cover letter development</b>$350 to $900</li>
+        <li><b>Reviews and templates</b>$200 to $1,125</li>
+        <li><b>Custom LinkedIn banner</b>$100 to $300</li>
+        <li><b>Strategy call</b>$275 per hour</li>
+      </ul>
+    </article>
+  </div>
+  <p class="fine">Each coaching package is 3 consecutive 60-minute sessions. RUSH services are available for an additional fee. Services do not guarantee employment. All pricing is subject to change without notice.</p>
+</div></section>
+
+<section class="process" id="how"><div class="wrap">
+  <h2>How it works</h2>
+  <ol class="rows">
+    <li><small>Connect</small><h3>Let's connect</h3><p>Schedule a free Career Connection Call to tell your career story and see how I can help.</p></li>
+    <li><small>Connect</small><h3>Provide forms</h3><p>Complete an intake form to highlight your accomplishments and send your current resume.</p></li>
+    <li><small>Create</small><h3>Resume design</h3><p>A customized, personally branded draft is delivered within 5 business days.</p></li>
+    <li><small>Create</small><h3>Virtual reveal</h3><p>Your resume is revealed on an interactive call via Zoom, telling your compelling career story.</p></li>
+    <li><small>Launch</small><h3>Finalize resume</h3><p>Receive an edited, finalized document, emailed to you in multiple forms.</p></li>
+    <li><small>Launch</small><h3>Start applying</h3><p>Use your new career document to apply to target companies and positions of interest.</p></li>
+  </ol>
+</div></section>
+
+<section id="results"><div class="wrap">
+  <h2>Feedback that touched my heart</h2>
+  <div class="voices">
+    <figure><blockquote>"The resume was great, and I got the interview the next day! Thank you for helping me find my dream job!"</blockquote><figcaption><b>Kim</b>, Diagnostic Medical Sonographer</figcaption></figure>
+    <figure><blockquote>"Because of you I now work for an IT Dept of a prestigious international Law Firm due to your experience and wisdom."</blockquote><figcaption><b>Tyler</b>, IT Support Engineer</figcaption></figure>
+    <figure><blockquote>"She offers individualized, high-caliber coaching that empowers her clients to accomplish their career goals."</blockquote><figcaption><b>Bridgett</b>, Director of Career Services</figcaption></figure>
+    <figure><blockquote>"I loved the modernized and customized new resume that fit my target company."</blockquote><figcaption><b>Kandis</b>, Academic Advisor</figcaption></figure>
+  </div>
+</div></section>
+
+<div class="summit"><div class="wrap">
+  <blockquote>"I press on toward the goal for the prize of the upward call of God in Christ Jesus."<cite>Philippians 3:14</cite></blockquote>
+</div></div>
+
+<section class="about" id="about"><div class="wrap">
+  <img src="../assets/headshot.jpg" alt="Portrait of Christen Mazura-Morris" width="1000" height="1131" loading="lazy">
+  <div>
+    <h2>Why I do this</h2>
+    <p>I have been writing resumes and educating people on the job search process for more than 20 years, working in the business and education sectors.</p>
+    <p>I help job seekers of all experience levels and industries build their confidence, with career guidance from a positive, faith-focused perspective, so they can take the next step towards the path that was designed for them.</p>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <h2>Resume designs from previous clients</h2>
+  <div class="row">
+    <figure><img src="../assets/sample-sales.jpg" alt="Sample resume for a sales director, details anonymized" width="700" height="906" loading="lazy"><figcaption>Sales Director</figcaption></figure>
+    <figure><img src="../assets/sample-dba.jpg" alt="Sample resume for a senior Oracle database administrator, details anonymized" width="700" height="906" loading="lazy"><figcaption>Sr. Oracle DBA</figcaption></figure>
+    <figure><img src="../assets/sample-social.jpg" alt="Sample resume for a social media intern, details anonymized" width="700" height="906" loading="lazy"><figcaption>Social Media Intern</figcaption></figure>
+  </div>
+</div></section>
+
+<section class="faq"><div class="wrap">
+  <h2>Questions you may have</h2>
+  <div>
+    <details open><summary>How long is the free call?</summary><p>15 minutes, by phone. We find the best time by email, then talk about your career goals and which service would suit you best.</p></details>
+    <details><summary>How soon will I see my resume?</summary><p>Your draft is delivered within 5 business days. Additional documents follow within 5 business days after your resume design is approved.</p></details>
+    <details><summary>Can it be done faster?</summary><p>Yes. RUSH services are available for an additional fee.</p></details>
+    <details><summary>What is the virtual reveal?</summary><p>An interactive call via Zoom where we go through your new resume together.</p></details>
+    <details><summary>Who writes my documents?</summary><p>I write every document myself.</p></details>
+    <details><summary>Do you guarantee I'll get a job?</summary><p>No. Services do not guarantee employment, and pricing is subject to change without notice.</p></details>
+  </div>
+</div></section>
+
+<section class="final" id="contact"><div class="wrap">
+  <div>
+    <h2>What is your upward calling?</h2>
+    <p class="lead">Take the first step today. Connect with me to schedule your free 15-minute Career Connection Call. We'll find the best time by email.</p>
+  </div>
+  <form data-preview>
+    <label for="n">Name</label><input id="n" type="text" name="name" autocomplete="name" required>
+    <label for="e">Email</label><input id="e" type="email" name="email" autocomplete="email" required>
+    <fieldset><legend>What do you need help with?</legend>
+      <label class="check"><input type="checkbox" name="s"> Resume and cover letter development</label>
+      <label class="check"><input type="checkbox" name="s"> LinkedIn profile optimization</label>
+      <label class="check"><input type="checkbox" name="s"> Career coaching</label>
+      <label class="check"><input type="checkbox" name="s"> Interview preparation and coaching</label>
+    </fieldset>
+    <label for="m">Message</label><textarea id="m" name="message" rows="3"></textarea>
+    <button class="btn" type="submit">Request my free call</button>
+  </form>
+</div></section>
+
+<footer><div class="wrap">
+  <a class="plate" href="#main"><img src="../assets/logo.png" alt="Upward Calling" width="636" height="342" loading="lazy"></a>
+  <ul>
+    <li><a href="mailto:cmazuramorris@gmail.com">Email</a></li>
+    <li><a href="https://www.linkedin.com/in/cmazura-morris/">LinkedIn</a></li>
+    <li><a href="https://www.upwardcalling.com/services-9">Photography</a></li>
+  </ul>
+  <small>Christen Mazura-Morris, CPRW, CPCC, CEIP. PARWCC certified. © 2026 Upward Calling.</small>
+</div></footer>
+<script src="../assets/preview.js"></script>
+</body>
+</html>
