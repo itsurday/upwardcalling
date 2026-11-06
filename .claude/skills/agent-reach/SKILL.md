@@ -67,7 +67,22 @@ The first time a site is used, if the user's Chrome is connected to the OpenCLI 
 
 ## Channels
 
-{{CHANNEL_TABLE}}
+| channel | level | actions | login |
+|---|---|---|---|
+| github | default | search, read | - |
+| twitter | experimental | search, profile, tweets, thread | `agent-reach login twitter` |
+| youtube | default | read, search, subtitle, transcribe | - |
+| reddit | optional | search, read, subreddit | Browser path only, if required |
+| facebook | experimental | search, profile | `agent-reach login facebook` |
+| instagram | experimental | search, profile, posts | `agent-reach login instagram` |
+| bilibili | default | search, read, hot, subtitle | `agent-reach login bilibili` |
+| xiaohongshu | optional | search, read, comments | `agent-reach login xiaohongshu` |
+| linkedin | optional | jobs, read | `agent-reach login linkedin` |
+| boss | optional | search, read | `agent-reach login boss` |
+| v2ex | default | hot, node, read, user | - |
+| xueqiu | optional | quote, search, hot_posts, hot_stocks | `agent-reach login xueqiu` |
+| xiaoyuzhou | optional | transcribe | - |
+| web | default | search, read | - |
 
 `default` channels are installed by default and can be removed; updates never add a removed one back. The `login` column is the authentication entry point, not a prerequisite for public content.
 
