@@ -211,5 +211,12 @@ template will cover Privacy and similar pages.
 
 ### Still open
 
-* **[CLIENT TO SUPPLY]** Whether to show a review rating (for example Google reviews), and the source if so. Until then, no rating is shown.
+* **Google rating**: the owner pointed to the [Google Maps listing](https://maps.app.goo.gl/jeWhzemys5oUsDaP9). Checked 2026-11-06, it shows
+  **5.0**, category "Resume service", 1244 State St Suite #117, Lemont, IL 60439 (Centennial
+  Plaza), "Identifies as women-owned". Google's signed-out "limited view" hides the **number of
+  reviews**, so **[CLIENT TO SUPPLY]** the review count. The proof strip will show "5.0 on Google (N reviews)"
+  once the count is known, and leave the rating out until then.
+  The listing also shows a "Claim this business" link, which suggests the Business Profile is not
+  claimed. Claiming it would let Christen add her phone number, photos and replies.
+* **[CLIENT TO SUPPLY]** Whether the Lemont, IL street address should appear on the site (it isn't on the current site).
 * **[CLIENT TO SUPPLY]** Further FAQ answers beyond the facts already on the site.
