@@ -1,0 +1,2 @@
+# Keep skill files LF so they match the upstream source
+.claude/skills/** text eol=lf
