@@ -26,7 +26,7 @@ decisions are in [decisions/](decisions/README.md).
   Phase 3 (colors, fonts and the design system) starts when the owner gives the go-ahead.
   > Answer: Approved.
 
-- [ ] **Christen: choose one of the five home page designs.**
+- [ ] **Christen: choose one of the ten home page designs (Round 1 or Round 2).**
   The owner will share the preview link. The headlines differ between designs, so say if you prefer
   one design with another's headline.
   > Answer:
