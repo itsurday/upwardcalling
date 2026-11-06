@@ -37,8 +37,8 @@ figure{margin:0}
 .quiet{display:inline-flex;align-items:center;min-height:50px;font-weight:700;text-underline-offset:4px;color:#1D4ED8}
 
 .head .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:6px 26px;padding-block:12px}
-.logo{display:block;background:#fff;padding:5px 8px;border:2.5px solid var(--ink);border-radius:var(--sketch)}
-.logo img{width:108px}
+.logo{display:block}
+.logo img{width:146px}
 .head nav{display:flex;flex-wrap:wrap;gap:0 22px;margin-left:auto;font-weight:500}
 .head nav a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
 .head nav a:hover{text-decoration:underline wavy var(--primary);text-underline-offset:5px}
@@ -155,12 +155,36 @@ footer small{width:100%;font-size:.88rem;color:var(--muted-ink)}
 }
 @media (max-width:480px){.path{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}.climb .draw{animation:none;stroke-dashoffset:0}}
+
+.hiker{transform:translate(120px,405px)}
+h2{text-decoration:underline wavy transparent 3px;text-underline-offset:10px;transition:text-decoration-color .3s}
+section:hover>.wrap>h2,section:hover .problem>h2{text-decoration-color:var(--primary)}
+.card,.fans figure{transition:box-shadow .18s}
+.card:hover,.fans figure:hover{box-shadow:7px 7px 0 var(--ink)}
+.bubbles li{transition:scale .18s}
+.bubbles li:hover{scale:1.03}
+@media (prefers-reduced-motion:no-preference){@supports (animation-timeline:view()){
+
+.hiker{transform:none;offset-path:path('M120 405C230 400 300 388 380 352S520 330 560 278 650 262 620 196 590 138 612 66');offset-rotate:0deg;offset-distance:0%;animation:climb linear both;animation-timeline:scroll(root);animation-range:0 760px}
+@keyframes climb{to{offset-distance:100%}}
+.trail-done{stroke-dasharray:1;stroke-dashoffset:1;animation:trailIn linear both;animation-timeline:scroll(root);animation-range:0 760px}
+@keyframes trailIn{to{stroke-dashoffset:0}}
+.flag{transform-box:fill-box;transform-origin:0 100%;animation:raise linear both;animation-timeline:scroll(root);animation-range:620px 800px}
+@keyframes raise{from{scale:1 0}}
+.bubbles li{animation:pop linear both;animation-timeline:view();animation-range:entry 0% cover 30%}
+@keyframes pop{from{opacity:0;scale:.7;rotate:-4deg}}
+.path li{animation:stepIn linear both;animation-timeline:view();animation-range:entry 0% cover 28%}
+@keyframes stepIn{from{opacity:0;translate:-26px 18px}}
+.card,.fans figure{animation:cardIn linear both;animation-timeline:view();animation-range:entry 0% cover 26%}
+@keyframes cardIn{from{opacity:0;translate:0 36px}}
+
+}}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to main content</a>
 <header class="head"><div class="wrap">
-  <a class="logo" href="#main"><img src="../assets/logo.png" alt="Upward Calling: career coaching and resume writing" width="636" height="342"></a>
+  <a class="logo" href="#main"><img src="../assets/logo-original.png" alt="Upward Calling: career coaching and resume writing" width="1200" height="633"></a>
   <a class="btn" href="#contact" style="order:2">Book a free call</a>
   <nav aria-label="Main"><a href="#services">Services</a><a href="#how">How it works</a><a href="#about">About</a><a href="#results">Results</a><a href="#contact">Contact</a></nav>
 </div></header>
@@ -183,10 +207,11 @@ footer small{width:100%;font-size:.88rem;color:var(--muted-ink)}
       <path class="line draw" pathLength="1" d="M612 44 590 118 628 104 618 172M785 66 770 124 804 112 790 170M170 300 158 340 186 332"/>
       <path class="trail" d="M120 405C230 400 300 388 380 352S520 330 560 278 650 262 620 196 590 138 612 66"/>
     </g>
-    <g class="fig">
-      <circle cx="136" cy="356" r="10"/><path d="M136 366V392M136 376 118 368M136 376 156 362M136 392 124 410M136 392 150 408"/>
-      <path d="M612 44V4L650 16 612 28" fill="#EA580C"/>
-    </g>
+    <path class="trail-done" pathLength="1" fill="none" stroke="#EA580C" stroke-width="7" stroke-linecap="round" d="M120 405C230 400 300 388 380 352S520 330 560 278 650 262 620 196 590 138 612 66"/>
+    <g class="fig flag"><path d="M612 44V4L650 16 612 28" fill="#EA580C"/></g>
+    <g class="hiker"><g class="fig" transform="translate(-136 -408)">
+      <circle cx="136" cy="356" r="10" fill="#fff"/><path d="M136 366V392M136 376 118 368M136 376 156 362M136 392 124 410M136 392 150 408"/>
+    </g></g>
     <text class="note" x="228" y="284" transform="rotate(-6 228 284)">No response</text>
     <text class="note" x="344" y="400">Never heard back</text>
     <text class="note" x="648" y="244">Interview,<tspan x="648" dy="1.05em">no offer</tspan></text>
@@ -332,7 +357,7 @@ footer small{width:100%;font-size:.88rem;color:var(--muted-ink)}
 </main>
 
 <footer><div class="wrap">
-  <a class="logo" href="#main"><img src="../assets/logo.png" alt="Upward Calling" width="636" height="342" loading="lazy"></a>
+  <a class="logo" href="#main"><img src="../assets/logo-original.png" alt="Upward Calling" width="1200" height="633" loading="lazy"></a>
   <ul>
     <li><a href="mailto:cmazuramorris@gmail.com">Email</a></li>
     <li><a href="https://www.linkedin.com/in/cmazura-morris/">LinkedIn</a></li>
@@ -341,5 +366,6 @@ footer small{width:100%;font-size:.88rem;color:var(--muted-ink)}
   <small>Christen Mazura-Morris, CPRW, CPCC, CEIP. PARWCC certified. © 2026 Upward Calling.</small>
 </div></footer>
 <script src="../assets/preview.js"></script>
+<script src="../assets/motion.js" data-tilt=".card,.fans figure"></script>
 </body>
 </html>

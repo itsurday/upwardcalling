@@ -35,10 +35,9 @@ figure{margin:0}
 .btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 #000}
 .quiet{display:inline-flex;align-items:center;min-height:50px;font-weight:700;text-underline-offset:4px}
 
-.head{background:#fff}
 .head .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:6px 26px;padding-block:12px}
-.logo{background:#fff;display:block}
-.logo img{width:124px}
+.logo{display:block}
+.logo img{width:150px}
 .head nav{display:flex;flex-wrap:wrap;gap:0 22px;margin-left:auto;font-weight:500}
 .head nav a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
 .head nav a:hover{text-decoration:underline;text-underline-offset:4px}
@@ -140,7 +139,7 @@ form .btn{width:100%}
 
 footer{background:var(--primary);color:#fff;padding-block:28px;font-size:.97rem}
 footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;align-items:center}
-footer .logo img{width:112px}
+footer .logo img{width:130px}
 footer ul{list-style:none;display:flex;flex-wrap:wrap;gap:0 20px;margin:0;padding:0}
 footer li a{display:inline-flex;align-items:center;min-height:32px}
 footer small{width:100%;font-size:.88rem;color:#E4E4E7}
@@ -157,12 +156,45 @@ footer small{width:100%;font-size:.88rem;color:#E4E4E7}
 }
 @media (max-width:480px){.flow{grid-template-columns:1fr}.fan{grid-template-columns:1fr;max-width:320px;gap:32px}.fan figure:nth-child(n){transform:none}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+
+.band-run{overflow:hidden;background:var(--pink);color:#000;border-block:2px solid #000;padding:10px 0;font:400 clamp(1.4rem,3vw,2.4rem)/1.1 var(--display);white-space:nowrap}
+.band-run div{width:max-content}
+.board,.note,.quotes figure{transition:box-shadow .2s}
+.board:hover,.quotes figure:hover{box-shadow:8px 8px 0 #000}
+@media (prefers-reduced-motion:no-preference){@supports (animation-timeline:view()){
+
+.band-run div{animation:run linear both;animation-timeline:scroll(root);animation-range:0 2400px}
+@keyframes run{to{translate:-55% 0}}
+.p1{animation:settle .7s cubic-bezier(.2,.8,.2,1) both,driftA linear both;animation-timeline:auto,scroll(root);animation-range:normal,0 900px}
+.p2{animation:settle .7s .1s cubic-bezier(.2,.8,.2,1) both,driftB linear both;animation-timeline:auto,scroll(root);animation-range:normal,0 900px}
+.p3{animation:settle .7s .2s cubic-bezier(.2,.8,.2,1) both,driftC linear both;animation-timeline:auto,scroll(root);animation-range:normal,0 900px}
+@keyframes driftA{to{translate:-40px -190px}}
+@keyframes driftB{to{translate:40px -260px}}
+@keyframes driftC{to{translate:24px -120px}}
+.me{animation:lift linear both;animation-timeline:scroll(root);animation-range:0 900px}
+@keyframes lift{to{translate:0 -70px;rotate:-4deg}}
+.note{animation:tossIn linear both;animation-timeline:view();animation-range:entry 0% cover 34%}
+.note:nth-child(2){animation-range:entry 8% cover 40%}
+.note:nth-child(3){animation-range:entry 16% cover 46%}
+@keyframes tossIn{from{opacity:0;translate:0 90px;scale:.86}}
+.answer span{animation:stamp linear both;animation-timeline:view();animation-range:entry 20% cover 44%}
+@keyframes stamp{from{opacity:0;scale:1.25}}
+@media (min-width:481px){
+  .fan figure:nth-child(1){animation:fanL linear both;animation-timeline:view();animation-range:entry 10% cover 46%}
+  .fan figure:nth-child(3){animation:fanR linear both;animation-timeline:view();animation-range:entry 10% cover 46%}
+  @keyframes fanL{from{transform:rotate(0) translateX(96%)}}
+  @keyframes fanR{from{transform:rotate(0) translateX(-96%)}}
+}
+.final h2{animation:grow linear both;animation-timeline:view();animation-range:entry 0% cover 36%}
+@keyframes grow{from{scale:.8;opacity:.3}}
+
+}}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to main content</a>
 <header class="head"><div class="wrap">
-  <a class="logo" href="#main"><img src="../assets/logo.png" alt="Upward Calling: career coaching and resume writing" width="636" height="342"></a>
+  <a class="logo" href="#main"><img src="../assets/logo-original.png" alt="Upward Calling: career coaching and resume writing" width="1200" height="633"></a>
   <a class="btn" href="#contact" style="order:2">Book a free call</a>
   <nav aria-label="Main">
     <a href="#services">Services</a><a href="#how">How it works</a><a href="#about">About</a><a href="#results">Results</a><a href="#contact">Contact</a>
@@ -190,6 +222,7 @@ footer small{width:100%;font-size:.88rem;color:#E4E4E7}
   </div>
 </div>
 
+<div class="band-run" aria-hidden="true"><div>GET THROUGH THE ATS &nbsp;/&nbsp; WIN THE INTERVIEW &nbsp;/&nbsp; TELL YOUR STORY &nbsp;/&nbsp; GET THROUGH THE ATS &nbsp;/&nbsp; WIN THE INTERVIEW &nbsp;/&nbsp; TELL YOUR STORY &nbsp;/&nbsp; GET THROUGH THE ATS &nbsp;/&nbsp; WIN THE INTERVIEW &nbsp;/&nbsp; TELL YOUR STORY &nbsp;/&nbsp; </div></div>
 <div class="proof dark"><div class="wrap"><ul>
   <li><b>20+ years</b><span>writing resumes and educating people on the job search</span></li>
   <li><b>PARWCC certified</b><span>resume writer, career coach and interview professional</span></li>
@@ -327,7 +360,7 @@ footer small{width:100%;font-size:.88rem;color:#E4E4E7}
 </main>
 
 <footer class="dark"><div class="wrap">
-  <a class="logo" href="#main"><img src="../assets/logo.png" alt="Upward Calling" width="636" height="342" loading="lazy"></a>
+  <a class="logo" href="#main"><img src="../assets/logo-original-light.png" alt="Upward Calling" width="1200" height="633" loading="lazy"></a>
   <ul>
     <li><a href="mailto:cmazuramorris@gmail.com">Email</a></li>
     <li><a href="https://www.linkedin.com/in/cmazura-morris/">LinkedIn</a></li>
@@ -336,5 +369,6 @@ footer small{width:100%;font-size:.88rem;color:#E4E4E7}
   <small>Christen Mazura-Morris, CPRW, CPCC, CEIP. PARWCC certified. © 2026 Upward Calling.</small>
 </div></footer>
 <script src="../assets/preview.js"></script>
+<script src="../assets/motion.js" data-tilt=".board,.quotes figure"></script>
 </body>
 </html>

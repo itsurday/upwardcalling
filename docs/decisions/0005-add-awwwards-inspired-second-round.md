@@ -35,6 +35,17 @@ Five more static pages in `previews/`, listed under Round 2 in `previews/index.h
 The product names show where each palette came from, not what the design is for. The examples are
 only for reference: no layout, text, image or code was taken from them.
 
+Second pass: the owner asked for more wow factor after research into current web design. Each design gained
+one signature effect on top of the unchanged static layout: `6-collage` drifting pieces, a scroll-driven text
+band and fanning resumes; `7-portfolio` documents dealt from a stack that float apart; `8-portrait` quotes that
+fill with light and a mountain that opens from a circle; `9-index` a name rising letter by letter, a progress
+line and inverting price rows; `10-sketchbook` a climber who walks the trail as you scroll.
+
+These use native CSS scroll-driven animation inside `@supports` and `prefers-reduced-motion` checks, so other
+browsers and people who prefer reduced motion get the full static page. `previews/assets/motion.js` adds a small
+mouse-only card tilt. Her original logo now appears without a white box (`logo-original.png`), with a light
+version for dark areas (`logo-original-light.png`). The previous versions are in `docs/design-backups/round-2-v1/`.
+
 ### Consequences
 
 * Good, because Christen can compare safer and bolder directions side by side.

@@ -44,8 +44,8 @@ figure{margin:0}
 .top nav{display:flex;flex-wrap:wrap;gap:0 20px;font-weight:500}
 .top nav a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
 .top nav a:hover{text-decoration:underline;text-underline-offset:4px}
-.top .logo{display:block;background:#fff;padding:5px 8px;border-radius:12px}
-.top .logo img{width:128px}
+.top .logo{display:block}
+.top .logo img{width:150px}
 .top .btn{justify-self:end}
 .hero h1{font-size:clamp(3rem,7.4vw,6.8rem);line-height:.98;max-width:12em;margin:clamp(14px,2vw,28px) auto 0;color:var(--primary)}
 .hero .sub{font-size:1.18rem;max-width:36em;margin:20px auto 22px}
@@ -138,6 +138,7 @@ fieldset{border:0;padding:0;margin:0 0 14px}
 form .btn{width:100%}
 
 footer{color:#fff;padding:18px clamp(20px,5vw,72px) 28px;font-size:.97rem}
+footer img{width:130px;margin-bottom:10px}
 footer ul{list-style:none;display:flex;flex-wrap:wrap;gap:0 20px;margin:0 0 4px;padding:0}
 footer li a{display:inline-flex;align-items:center;min-height:32px}
 footer small{font-size:.88rem;color:#FEE2E2}
@@ -161,6 +162,35 @@ footer :focus-visible{outline-color:#fff}
   .pile figure:nth-child(n){transform:none}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+
+.d1{--sx:26vw;--dy:-70px}
+.d2{--sx:9vw;--dy:-120px}
+.d3{--sx:-9vw;--dy:-105px}
+.d4{--sx:-26vw;--dy:-55px}
+@media (prefers-reduced-motion:no-preference){
+  .doc{animation:deal 1.15s cubic-bezier(.16,1,.3,1) both}
+  .d2{animation-delay:.08s}.d3{animation-delay:.16s}.d4{animation-delay:.24s}
+  @keyframes deal{from{transform:translate(var(--sx),60px) rotate(0)}}
+  .hero h1{animation:riseIn .9s cubic-bezier(.16,1,.3,1) both}
+  @keyframes riseIn{from{opacity:0;translate:0 28px}}
+}
+@media (max-width:820px){.d2{--sx:20vw}.d3{--sx:-20vw}}
+@media (prefers-reduced-motion:no-preference){@supports (animation-timeline:view()){
+
+.doc{animation:deal 1.15s cubic-bezier(.16,1,.3,1) both,float linear both;animation-timeline:auto,scroll(root);animation-range:normal,0 800px}
+@keyframes float{to{translate:0 var(--dy)}}
+.blob{animation:swell linear both;animation-timeline:scroll(root);animation-range:0 800px}
+@keyframes swell{to{scale:1.22}}
+.frame>.panel:not(.hero){animation:panelIn linear both;animation-timeline:view();animation-range:entry 0% entry 55%}
+@keyframes panelIn{from{scale:.93;opacity:.35;translate:0 40px}}
+.steps li,.said figure,.card{animation:riseItem linear both;animation-timeline:view();animation-range:entry 0% cover 28%}
+@keyframes riseItem{from{opacity:0;translate:0 34px}}
+.pile figure:nth-child(1){animation:spreadL linear both;animation-timeline:view();animation-range:entry 5% cover 42%}
+.pile figure:nth-child(3){animation:spreadR linear both;animation-timeline:view();animation-range:entry 5% cover 42%}
+@keyframes spreadL{from{transform:rotate(0) translateX(70%)}}
+@keyframes spreadR{from{transform:rotate(0) translateX(-70%)}}
+
+}}
 </style>
 </head>
 <body>
@@ -169,7 +199,7 @@ footer :focus-visible{outline-color:#fff}
 <div class="panel hero">
   <header class="top">
     <nav aria-label="Main"><a href="#services">Services</a><a href="#how">How it works</a><a href="#about">About</a><a href="#results">Results</a><a href="#contact">Contact</a></nav>
-    <a class="logo" href="#main"><img src="../assets/logo.png" alt="Upward Calling: career coaching and resume writing" width="636" height="342"></a>
+    <a class="logo" href="#main"><img src="../assets/logo-original.png" alt="Upward Calling: career coaching and resume writing" width="1200" height="633"></a>
     <a class="btn" href="#contact">Book a free call</a>
   </header>
   <svg class="seal" viewBox="0 0 120 120" aria-hidden="true">
@@ -338,6 +368,7 @@ footer :focus-visible{outline-color:#fff}
 </div>
 
 <footer>
+  <img src="../assets/logo-original-light.png" alt="Upward Calling" width="1200" height="633" loading="lazy">
   <ul>
     <li><a href="mailto:cmazuramorris@gmail.com">Email</a></li>
     <li><a href="https://www.linkedin.com/in/cmazura-morris/">LinkedIn</a></li>
@@ -346,5 +377,6 @@ footer :focus-visible{outline-color:#fff}
   <small>Christen Mazura-Morris, CPRW, CPCC, CEIP. PARWCC certified. © 2026 Upward Calling.</small>
 </footer>
 <script src="../assets/preview.js"></script>
+<script src="../assets/motion.js" data-tilt=".card"></script>
 </body>
 </html>
