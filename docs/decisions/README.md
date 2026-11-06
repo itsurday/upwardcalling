@@ -12,3 +12,4 @@ To add one, copy [adr-template.md](adr-template.md) to `NNNN-short-title.md` usi
 | [0003](0003-career-home-page-section-order.md) | Career home page: trust-led, single-CTA section order | accepted |
 | [0004](0004-offer-five-design-directions.md) | Offer five design directions as static home page previews | proposed |
 | [0005](0005-add-awwwards-inspired-second-round.md) | Add a second round of previews inspired by Awwwards | proposed |
+| [0006](0006-add-logo-design-options.md) | Offer four logo options, using the logo-design skill | proposed |

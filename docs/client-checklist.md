@@ -31,6 +31,10 @@ decisions are in [decisions/](decisions/README.md).
   one design with another's headline.
   > Answer:
 
+- [ ] **Christen: choose one of the four logos, or keep the current one.**
+  They're in the Logo Designs section of the same link.
+  > Answer:
+
 ## Needed before launch (not blocking design)
 
 - [ ] **Number of Google reviews.** The [Google listing](https://maps.app.goo.gl/jeWhzemys5oUsDaP9) shows a **5.0** rating, but
