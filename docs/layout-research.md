@@ -136,8 +136,8 @@ Screenshots for each: `research/screenshots/<site>-{desktop,mobile}.jpg`.
 5. **A proof strip of hard numbers right after the hero.** Thomas uses years, rating, ranking and award.
    Use only facts Christen can back up, such as "20+ years" and "5-business-day first draft".
 6. **"You work directly with me."** Thomas ("No junior writers"), Strategic and Career Steering
-   all make founder-only service a differentiator. **[CLIENT TO SUPPLY]:** confirm Christen writes
-   every document herself before we say so.
+   all make founder-only service a differentiator. Confirmed by the client: Christen writes
+   every document herself, so this can be stated.
 7. **Testimonials with name and role, near the final CTA.** UI/UX Pro Max `landing` search, pattern
    "Hero + Testimonials + CTA", says: "Social proof before CTA. Use a concise set of verified
    testimonials with photo, name, and role."
@@ -180,7 +180,7 @@ I ran these queries with `.claude/skills/ui-ux-pro-max/scripts/search.py`:
 
 | # | Section | Why it's here | Content source |
 |---|---|---|---|
-| 1 | **Header**: logo; nav (Services · How it works · About · Results · Contact); "Book a free call" button | One persistent primary action (pattern 1). Short nav (avoid list). No "Log In". | Existing pages |
+| 1 | **Header**: logo; nav (Services · How it works · About · Results · Contact); "Book a free call" button (goes to the contact form) | One persistent primary action (pattern 1). Short nav (avoid list). No "Log In". | Existing pages |
 | 2 | **Hero**: headline about the outcome; one-line subhead saying who it helps and how; primary CTA *Schedule your free Career Connection Call*; secondary *See services & pricing*; Christen's photo with CPRW · CPCC · CEIP | Sells the person and credentials up front (pattern 2). Fixes the 1.46:1 hero and the two-business split. | Tagline "Moving Mountains to Move Ahead"; credentials from `/contact-8`; headshot exists on the current site |
 | 3 | **Proof strip**: 20+ years · PARWCC certified · resume draft in 5 business days · virtual, via Zoom | Quick credibility right after the promise (pattern 5; "Trust & Authority": proof before solution). | All stated on the current site |
 | 4 | **Problem**: "Does this sum up your job search?" with 3–4 pain points | Problem before product (pattern 3). Her strongest existing copy. | Home page copy |
@@ -198,12 +198,18 @@ I ran these queries with `.claude/skills/ui-ux-pro-max/scripts/search.py`:
 disclaimers), About, Results (testimonials and samples), Contact. One generic content page
 template will cover Privacy and similar pages.
 
-### Open items for the client
+### Client answers (2026-11-06)
 
-* **[CLIENT TO SUPPLY]** Booking method: keep email scheduling, or use a calendar link (Calendly, Wix Bookings or similar)? The new site needs a URL for the primary CTA.
-* **[CLIENT TO SUPPLY]** Domain plan for the career and photography sites (ADR-0002).
-* **[CLIENT TO SUPPLY]** Confirm Christen personally writes every document (pattern 6).
-* **[CLIENT TO SUPPLY]** Permission to show testimonial first names and roles as they appear now; any photos to go with them.
-* **[CLIENT TO SUPPLY]** High-resolution headshot, logo source files, and the three resume samples as images or PDFs.
-* **[CLIENT TO SUPPLY]** Current prices. The site says "subject to change without notice", and the home page and services page wording differ slightly.
-* **[CLIENT TO SUPPLY]** Whether to show a review rating (for example Google reviews), and the source if so.
+| Question | Answer | Effect on the build |
+|---|---|---|
+| Booking method | Use an email form for now. | Every "Schedule your free Career Connection Call" CTA goes to the contact form (section 12 and the Contact page). There's no calendar integration. |
+| Domains | Both stay on `https://www.upwardcalling.com/`. Photography moves to `/photo`. | Career site at the root. The footer links to `/photo`. ADR-0002 updated. |
+| Does Christen write every document? | Yes. | "You work directly with Christen" can be stated (pattern 6). |
+| Headshot, logo, resume samples | Take them from the current site. | Download the current Wix images in Phase 4 and note their resolution. |
+| Prices | Take them from the current site. | Use the Services page (`/career`) as the source of truth, since it's the dedicated pricing page. Its wording wins where the home page differs ("& Strategy Call", "The Quick Fix"). Keep its notes: RUSH extra, no employment guarantee, prices subject to change. |
+| Testimonials | Take them from the current site. | Use the first names and roles exactly as published. |
+
+### Still open
+
+* **[CLIENT TO SUPPLY]** Whether to show a review rating (for example Google reviews), and the source if so. Until then, no rating is shown.
+* **[CLIENT TO SUPPLY]** Further FAQ answers beyond the facts already on the site.

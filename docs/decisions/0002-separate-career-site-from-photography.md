@@ -46,13 +46,13 @@ gives each audience one clear path to booking and matches the owner's direction.
 
 * Good, because the career home page can be built around one conversion: the free call.
 * Good, because copy, imagery and credentials can stay on-message (resumes and coaching, faith-focused).
-* Neutral: the career footer keeps a single "Photography" link out to the future site, so existing
+* Neutral: the career footer keeps a single "Photography" link to `/photo`, so existing
   photography clients aren't stranded.
-* Bad, because the client must decide domains. **Client to supply:** whether the career site keeps
-  `upwardcalling.com` and photography moves (for example to a subdomain or new domain), and the
-  photography URL to link to.
+* Neutral: both stay on one domain (owner decision, 2026-11-06). The Career Services site lives at
+  `https://www.upwardcalling.com/` and Photography at `https://www.upwardcalling.com/photo`.
+  They are separate projects that share the domain, so they need a shared hosting/routing setup.
 * Bad, because existing photography URLs (for example `/services-9`, school-picture ordering) will
-  need redirects once the photography site exists.
+  need redirects to `/photo` once the photography project ships.
 
 ### Confirmation
 
