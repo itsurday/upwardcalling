@@ -31,7 +31,7 @@ decisions are in [decisions/](decisions/README.md).
   one design with another's headline.
   > Answer:
 
-- [ ] **Christen: choose one of the four logos, or keep the current one.**
+- [ ] **Christen: choose one of the five logos, or keep the current one.**
   They're in the Logo Designs section of the same link.
   > Answer:
 

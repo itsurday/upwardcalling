@@ -5,7 +5,7 @@ decision-makers: Project owner (chrisnkad), Christen Mazura-Morris (client choos
 consulted: Claude Code
 ---
 
-# Offer four logo options, using the logo-design skill
+# Offer five logo options, using the logo-design skill
 
 ## Context and Problem Statement
 
@@ -22,7 +22,7 @@ on the existing logo and some from scratch, using the
 
 ## Decision Outcome
 
-Four options in `previews/logos/`, listed under Logo Designs on the chooser page.
+Options in `previews/logos/`, listed under Logo Designs on the chooser page.
 
 | Logo | Source | Idea | Lockup font (SIL Open Font License) |
 |---|---|---|---|
@@ -33,6 +33,10 @@ Four options in `previews/logos/`, listed under Logo Designs on the chooser page
 
 Colors are `#392C61` and `#F2B800`, matched by eye to the current logo, not taken from a brand guide.
 All files are vector paths with no live text, masks or filters.
+
+The owner then asked for a fifth option, `original-gold-c.png`: her original logo file with only the C
+recolored to the peaks' exact gold (`#F8C304`). It is a PNG with a white background, so it has no
+reversed version. A vector version will only be drawn if this option is chosen.
 
 Tried and rejected:
 
