@@ -26,17 +26,20 @@ Options in `previews/logos/`, listed under Logo Designs on the chooser page.
 
 | Logo | Source | Idea | Lockup font (SIL Open Font License) |
 |---|---|---|---|
-| `link` | Current logo | Her U and C, bold and linked, overlapping in a small fish shape | Young Serif |
-| `rising-range` | Current logo | Her mountain, simplified, with gold chevrons on the main peak | Figtree |
+| `original-gold-c` | Current logo | Her logo redrawn, with the C in gold | Open Sans |
+| `link` | Current logo | Her U and C as an interlaced ribbon, with a small fish shape | Young Serif |
+| `rising-range` | Current logo | Nested peaks spreading outward, like a call rising | Outfit |
 | `summit-u` | Scratch | A U with a climbing top edge and a gold summit inside | Figtree |
 | `peak-wordmark` | Scratch | The name in capitals, with each A drawn as a peak | Outfit |
 
-Colors are `#392C61` and `#F2B800`, matched by eye to the current logo, not taken from a brand guide.
 All files are vector paths with no live text, masks or filters.
 
-The owner then asked for a fifth option, `original-gold-c.png`: her original logo file with only the C
-recolored to the peaks' exact gold (`#F8C304`). It is a PNG with a white background, so it has no
-reversed version. A vector version will only be drawn if this option is chosen.
+The owner then asked for a fifth option, `original-gold-c`: her original logo with the C in the peaks' gold.
+
+After review the owner found the set not yet professional, so all five were redrawn: exact colors sampled
+from her file (`#372B62`, `#F8C304`) with flat shades for folds and facets, a real interlaced ribbon for
+`link`, nested peaks for `rising-range`, a faceted summit on the stem-top line for `summit-u`, pointed As
+for `peak-wordmark`, and clean vector artwork with a bolder monogram for `original-gold-c`.
 
 Tried and rejected:
 
@@ -45,6 +48,7 @@ Tried and rejected:
 * Pen nib: clip art, then a bat once mountains were cut into it.
 * Compass C: its up and down triangles read as a sort icon.
 * Plain rising U: no idea left once the Summit U existed.
+* Flat chevron tiers for Rising Range: read as a house roof or pagoda.
 
 The skill is installed in `.claude/skills/logo-design/` (MIT, version 1.4.5). See
 [ADR-0001](0001-use-project-scoped-design-skills.md) for why skills are kept in the repo.
